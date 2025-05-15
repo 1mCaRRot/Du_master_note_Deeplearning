@@ -1,0 +1,10 @@
+conda activate urboge
+export http_proxy="http://10.9.16.4:8080"
+export https_proxy="http://10.9.16.4:8080"
+cd /data/Urboge/DMS_opt/
+jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser
+
+
+
+# 输出内容会有一个类似:http://localhost.localdomain:8888/tree?token=7725f473b06fcdbb7722efc785895005baf4dd226c0c8ffa的内容。
+# 在Mobaxterm上面，第二行有一个Tunneling，进入后启动。然后在浏览器输入上面的这个网址就可以进入Jupyter了。
