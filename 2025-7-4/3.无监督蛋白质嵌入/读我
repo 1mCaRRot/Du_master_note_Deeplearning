@@ -1,0 +1,4 @@
+描述：通过无监督学习训练的蛋白质嵌入模型，从序列数据中学习低维表示，捕捉生物学功能和结构信息。论文“Unsupervised protein embeddings outperform hand-crafted sequence and structure features at predicting molecular function”展示了其在功能预测中的优越性。
+性能：该论文报告，使用k-NN分类器，嵌入表现优于BLAST和手动特征（如one-hot、k-mer计数）。
+适用性：适合你的任务，可用于学习序列表示，适合后续分析。嵌入空间反映氨基酸的生化属性和蛋白质的远程同源性。
+实现细节：可使用ELMo模型，训练于大规模无标签序列数据，生成1024维嵌入。
