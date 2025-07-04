@@ -1,0 +1,4 @@
+描述：RBMs是一种无监督学习模型，基于简单神经网络架构，通过重构输入数据学习序列的统计模式。对于氨基酸序列，RBMs可以学习氨基酸之间的相互作用，并生成新的序列。
+性能：在“Interpretable Machine Learning of Amino Acid Patterns in Proteins: A Statistical Ensemble Approach”中，RBMs展示了在蛋白质模式分析中的有效性，特别是在发现氨基酸的分布规律。
+适用性：适合你的任务，可用于模式发现和序列生成。论文提到RBMs能从无标签数据中提取已知结果，并丰富先前知识。
+实现细节：需将序列编码为one-hot向量（如20维，代表20种氨基酸），训练RBMs以优化伪对数似然（PLL）。论文建议80%训练集，20%验证集。
