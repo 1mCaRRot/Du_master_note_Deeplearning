@@ -1,0 +1,4 @@
+描述：ProtVec是一种基于无监督学习的序列嵌入方法，类似于NLP中的word2vec。它通过学习固定重叠k-mer（氨基酸片段）的表示，为每个序列生成密集向量，捕捉语义和结构特征。
+性能：在“Amino acid encoding for deep learning applications”中，ProtVec被证明优于手动编码（如one-hot），在蛋白质序列分析中表现良好。
+适用性：适合你的任务，可用于学习序列的低维表示，方便后续聚类或可视化。论文提到ProtVec为100维向量，适合大规模数据。
+实现细节：可使用类似word2vec的skip-gram模型，训练时无需标签。推荐使用现成实现（如GitHub上的ProtVec库）。
